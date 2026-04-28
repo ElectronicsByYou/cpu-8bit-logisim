@@ -59,9 +59,10 @@ Built entirely in **Logisim Evolution**, the CPU features :
 
 bit7  bit6  bit5  bit4  bit3  bit2  bit1  bit0
 
-└──────────────────┘  └──────────────────────┘
-OPCODE (4 bits)        OPERAND (4 bits)
-→ Control Unit         → Internal bus / PC
+└──────────────────┘          └──────────────────────┘
+
+OPCODE (4 bits)                OPERAND (4 bits)
+→ Control Unit                 → Internal bus / PC
 
 ### Full ISA Table
 
