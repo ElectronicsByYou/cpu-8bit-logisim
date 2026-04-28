@@ -322,52 +322,52 @@ python programs/assembler.py programs/my_program.asm
 
 cpu-8bit-logisim/
 
-├── README.md               ← this file
-
-├── logisim/
-
-│   ├── cpu_main.circ       ← main Logisim circuit
-
-│   ├── alu.circ            ← ALU subcircuit
-
-│   └── rom_content.txt     ← ROM values
-
-├── docs/
-
-│   ├── architecture.md     ← detailed architecture
-
-│   ├── ISA.md              ← full instruction reference
-
-│   ├── control_signals.md  ← 28-signal table
-
-│   └── examples/
-
-│       ├── addition.md
-
-│       ├── while_loop.md
-
-│       └── multiplication.md
-
-├── programs/
-
-│   ├── assembler.py        ← Python assembler
-
-│   ├── addition.hex
-
-│   ├── while_loop.hex
-
-│   └── multiplication.hex
-
-└── images/
-
-├── cpu_overview.png
-
-├── alu.png
-
-├── control_unit.png
-
-└── demo.gif
-
+        ├── README.md               ← this file
+        
+        ├── logisim/
+        
+                │   ├── cpu_main.circ       ← main Logisim circuit
+                
+                │   ├── alu.circ            ← ALU subcircuit
+                
+                │   └── rom_content.txt     ← ROM values
+        
+        ├── docs/
+        
+                │   ├── architecture.md     ← detailed architecture
+                
+                │   ├── ISA.md              ← full instruction reference
+                
+                │   ├── control_signals.md  ← 28-signal table
+                
+                │   └── examples/
+                
+                │       ├── addition.md
+                
+                │       ├── while_loop.md
+                
+                │       └── multiplication.md
+        
+        ├── programs/
+        
+                │   ├── assembler.py        ← Python assembler
+                
+                │   ├── addition.hex
+                
+                │   ├── while_loop.hex
+                
+                │   └── multiplication.hex
+        
+        └── images/
+        
+                ├── cpu_overview.png
+                
+                ├── alu.png
+                
+                ├── control_unit.png
+                
+                └── demo.gif
+        
 
 ---
 
