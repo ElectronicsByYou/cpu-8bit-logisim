@@ -118,6 +118,8 @@ Size = 256 × 28 bits
 | 3     | PC  ← PC+1   | PC_INC                | 0x00400000 |
 | 4+    | Execute      | depends on opcode     | —          |
 
+
+
 ### Jump Logic
 
 Conditional jumps combine `JMP_ENABLE` with flag values
@@ -158,11 +160,6 @@ JMP_ENABLE            → JMP (unconditional)
 
 Every instruction follows the same 4-cycle fetch,
 followed by 1 to 3 execute cycles depending on the opcode.
-Clock :  1    2    3    4    5    6    7
-──── Fetch ────────  ── Execute ──
-State :  0    1    2    3    4    5    6
-Action: MAR  MDR   IR  PC+1  ...opcode...
-←PC  ←RAM ←MDR  ++
 
 ---
 
