@@ -21,9 +21,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#ALU.circ" name="7"/>
-  <lib desc="file#affichage_hexa_huit_bit_signe_par_double_dabble.circ" name="8"/>
-  <lib desc="file#Memory.circ" name="9"/>
+  <lib desc="file#C:\Users\Aurele\Dropbox\PC\Documents\E3A\Projet entrepreneur\Logisim\ALU.circ" name="7"/>
+  <lib desc="file#C:\Users\Aurele\Dropbox\PC\Documents\E3A\Projet entrepreneur\Logisim\affichage_hexa_huit_bit_signe_par_double_dabble.circ" name="8"/>
+  <lib desc="file#C:\Users\Aurele\Dropbox\PC\Documents\E3A\Projet entrepreneur\Logisim\Memory.circ" name="9"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -74,6 +74,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1440,710)" to="(1500,710)"/>
     <wire from="(1240,990)" to="(1300,990)"/>
     <wire from="(320,960)" to="(420,960)"/>
+    <wire from="(230,800)" to="(270,800)"/>
     <wire from="(1350,550)" to="(1350,560)"/>
     <wire from="(1000,630)" to="(1020,630)"/>
     <wire from="(1200,400)" to="(1200,460)"/>
@@ -290,7 +291,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(960,400)" to="(960,420)"/>
     <wire from="(340,260)" to="(340,290)"/>
     <wire from="(530,290)" to="(530,310)"/>
-    <wire from="(310,800)" to="(350,800)"/>
     <wire from="(1290,890)" to="(1290,940)"/>
     <wire from="(1200,980)" to="(1280,980)"/>
     <wire from="(680,230)" to="(700,230)"/>
@@ -308,6 +308,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(620,750)" to="(670,750)"/>
     <wire from="(1100,540)" to="(1100,630)"/>
     <wire from="(1360,320)" to="(1360,410)"/>
+    <wire from="(280,810)" to="(280,820)"/>
     <wire from="(760,560)" to="(820,560)"/>
     <wire from="(400,610)" to="(400,630)"/>
     <wire from="(400,450)" to="(400,470)"/>
@@ -331,7 +332,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(620,950)" to="(630,950)"/>
     <wire from="(620,1110)" to="(630,1110)"/>
     <wire from="(740,600)" to="(740,610)"/>
-    <wire from="(230,800)" to="(290,800)"/>
     <wire from="(1620,680)" to="(1620,700)"/>
     <wire from="(420,600)" to="(420,610)"/>
     <wire from="(820,360)" to="(820,380)"/>
@@ -445,6 +445,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1090,430)" to="(1140,430)"/>
     <wire from="(1510,450)" to="(1510,500)"/>
     <wire from="(1310,890)" to="(1310,940)"/>
+    <wire from="(320,800)" to="(350,800)"/>
     <wire from="(380,560)" to="(390,560)"/>
     <wire from="(450,950)" to="(460,950)"/>
     <wire from="(780,230)" to="(850,230)"/>
@@ -499,6 +500,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="4" loc="(1350,320)" name="Register">
       <a name="label" val="Register B"/>
     </comp>
+    <comp lib="1" loc="(290,800)" name="Controlled Buffer"/>
     <comp lib="6" loc="(983,724)" name="Text">
       <a name="text" val="0 11 -&gt; OR"/>
     </comp>
@@ -622,9 +624,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(770,760)" name="Probe">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="6" loc="(1346,147)" name="Text">
-      <a name="text" val="A mieux comprendre: - decodeur BCD"/>
-    </comp>
     <comp lib="0" loc="(1160,460)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
@@ -647,6 +646,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(350,800)" name="Tunnel">
       <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(280,820)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(1660,720)" name="Tunnel">
       <a name="label" val="C"/>
@@ -808,9 +811,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(730,1040)" name="Tunnel">
       <a name="label" val="RAM_WRITE"/>
     </comp>
-    <comp lib="6" loc="(1438,166)" name="Text">
-      <a name="text" val="- latches,flip-flops,counters"/>
-    </comp>
     <comp lib="0" loc="(480,820)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="IR_IN"/>
@@ -840,7 +840,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(510,450)" name="Probe">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="1" loc="(310,800)" name="Controlled Buffer"/>
     <comp lib="0" loc="(400,630)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="RAM_WRITE"/>
@@ -866,7 +865,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(610,1030)" name="Splitter">
       <a name="fanout" val="28"/>
-      <a name="incoming" val="8"/>
+      <a name="incoming" val="28"/>
       <a name="appear" val="center"/>
     </comp>
     <comp lib="0" loc="(600,780)" name="Splitter">
@@ -880,10 +879,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="5" loc="(1360,1070)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(300,810)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="1" loc="(850,290)" name="Controlled Buffer">
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
@@ -934,8 +929,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="RA_OUT"/>
     </comp>
     <comp lib="4" loc="(600,1030)" name="ROM">
-      <a name="contents">addr/data: 8 8
-0
+      <a name="dataWidth" val="28"/>
+      <a name="contents">addr/data: 8 28
+16*41 16*14080 16*108 16*20000 8000000 60 60 4*802
+60 8040020 80c0020 8140020 0 0 8000204 8000220
+8000000 0 14080 14080 4*1004 82 9*0 8000208
+8000408 8002210 8802210 8402210 8c02210 8008000
 </a>
     </comp>
     <comp lib="0" loc="(880,540)" name="Tunnel">
@@ -1112,6 +1111,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(180,1020)" name="Constant"/>
     <comp lib="0" loc="(730,1160)" name="Tunnel">
       <a name="label" val="RESET_CTR"/>
+    </comp>
+    <comp lib="0" loc="(320,800)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
   </circuit>
 </project>
